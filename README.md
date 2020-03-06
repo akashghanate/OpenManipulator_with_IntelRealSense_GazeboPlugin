@@ -24,7 +24,7 @@
 4. start the simulation by clicking the play button at the bottom in gazebo simulator
 ### To monitor the depth data using Rviz
 1. open rviz in another terminal \
-`rosrun rviz rviz` \
+`rosrun rviz rviz` 
 2. set the **fixed frame** id to **color** under the global option \
   ![picture alt](rviz_fixedFrame.png)
 3. subscribe to the depth data by adding DepthCloud Bytopic \
