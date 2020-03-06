@@ -22,6 +22,8 @@
    world with objects \
    `roslaunch open_manipulator_gazebo open_manipulator_gazebo_table.launch`
 4. start the simulation by clicking the play button at the bottom in gazebo simulator
+5. to operate the openManipulator bot using keyboard 
+   `roslaunch open_manipulator_teleop open_manipulator_teleop_keyboard.launch`
 ### To monitor the depth data using Rviz
 1. open rviz in another terminal \
 `rosrun rviz rviz` 
@@ -29,3 +31,14 @@
   ![picture alt](rviz_fixedFrame.png)
 3. subscribe to the depth data by adding DepthCloud Bytopic \
  ![picture alt](bytopic.png)
+### To record the depth data in rosbag
+1. create a directory for rosbag file\
+  `mkdir rosbag_files && cd rosbag_files`
+2. After following the steps to launch the siimulator run this command in new terminal\
+  `rosbag record -a`\
+   this will record all the data from all the topics published by ros master\
+   \
+   To record the specific topic mention them instead of **-a** in the above command\
+   \
+   all the published topics can be viewed using the command\
+   `rostopc list`
