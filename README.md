@@ -10,7 +10,7 @@
 3. clone the repository in the src \
    `git clone https://github.com/aku98/OpenManipulator_with_IntelRealSense_GazeboPlugin.git`
 4. go to the catkin_ws repository and build the files \
-   `cd ~/catkin_ws && catkin make`
+   `cd ~/catkin_ws && catkin_make`
 ### How to run
 1. open a terminal and setup the source for the workspace \
    `cd ~/catkin_ws/devel && source setup.sh`
